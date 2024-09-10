@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomig Petals</title>
+    <link rel="stylesheet" href="css/category.css"/>
+    <script src="js/angular.js"></script>
+    <script src="js/script.js"></script>
+    <link  rel="icon" href="images/favicon.ico">
+</head>
+<body ng-controller="cop">
+    <nav class="navbar">
+        <a href ="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+        <div class="nav1">
+            <div class="nav1a">
+                <img src="images/home_icon.png"/><a href="index.html">Home</a>
+            </div>
+            <div class="occ">
+                <a class="men">Occasions</a>
+                <div class="dropdown">
+                    <button onclick="goToThankYou()" class="drop">
+                        <a>Thank You</a>
+                        <hr>
+                    </button>
+                    <button onclick="goToAnniversary()" class="drop">
+                        <a>Anniversary</a>
+                        <hr>
+                    </button>
+                    <button onclick="goToMarraige()" class="drop">
+                        <a>Marraige</a>
+                        <hr>
+                    </button>
+                    <button  onclick="goToBirthday()" class="drop">
+                        <a>Birthday</a>
+                        <hr>
+                    </button>
+                    <button  onclick="goToGradution()" class="drop">
+                        <a>Gradution</a>
+                        <hr>
+                    </button>
+                    
+            </div>
+        </div>
+            
+            <div class="flw">
+                <a>flowers</a>
+                <div class="dropdown2">
+                    <button  onclick="Daisies()" class="drop">
+                        <a>Daisies</a>
+                        <hr>
+                    </button>
+                    <button onclick="roses()" class="drop">
+                        <a>Roses</a>
+                        <hr>
+                    </button>
+                    <button  onclick="Sunflowers()" class="drop">
+                        <a>Sunflowers</a>
+                        <hr>
+                    </button>
+                    <button  onclick="Lilies()" class="drop">
+                        <a>Lilies</a>
+                        <hr>
+                    </button>
+                    <button  onclick="Irisis()" class="drop">
+                        <a>Irisis</a>
+                        <hr>
+                    </button>
+                    
+            </div>
+            </div>
+            <a href="contact.html" class="cont">Contact us</a>
+            
+            <div class="nav1b">
+                <img src="images/menu.png" id="menu" alt="">
+                <div class="dropdown3">
+                    <button  onclick="goToPage()" class="drop">
+                        <a>Home</a>
+                        <hr>
+                    </button>
+                    <div class="pop drop">
+                        <a>Occasions</a>
+
+                        <div class="dropdown4">
+                            <button onclick="goToThankYou()" class="drop">
+                                <a>Thank You</a>
+                                <hr>
+                            </button>
+                            <button onclick="goToAnniversary()" class="drop">
+                                <a>Anniversary</a>
+                                <hr>
+                            </button>
+                            <button onclick="goToMarraige()" class="drop">
+                                <a>Marraige</a>
+                                <hr>
+                            </button>
+                            <button  onclick="goToBirthday()" class="drop">
+                                <a>Birthday</a>
+                                <hr>
+                            </button>
+                            <button  onclick="goToGradution()" class="drop">
+                                <a>Gradution</a>
+                                <hr>
+                            </button>
+                    </div>
+                            
+                        <hr>
+                    </div>
+                    <div class="pop2 drop">
+                        <a>Flowers</a>
+                        
+                        <div class="dropdown5">
+                            <button  onclick="Daisies()" class="drop">
+                                <a>Daisies</a>
+                                <hr>
+                            </button>
+                            <button onclick="roses()" class="drop">
+                                <a>Roses</a>
+                                <hr>
+                            </button>
+                            <button  onclick="Sunflowers()" class="drop">
+                                <a>Sunflowers</a>
+                                <hr>
+                            </button>
+                            <button  onclick="Lilies()" class="drop">
+                                <a>Lilies</a>
+                                <hr>
+                            </button>
+                            <button  onclick="Irisis()" class="drop">
+                                <a>Irisis</a>
+                                <hr>
+                            </button>
+                            
+                    </div>
+                    <hr>
+                    </div>
+                    <button  onclick="goTocontact()" class="drop">
+                        <a>Contact us</a>
+                        <hr>
+                    </button>
+            </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <section class="main">
+        <section class="breadcrumb mag">
+            <a href ="index.html">Home</a> / <a href="Gradution.html">Gradution</a>
+        </section>
+        <div class="title">
+            <h1 class="mag">Gradution Collection</h1>
+        </div>
+        <div class="titledesc mag">
+            <h1>The graduation section of your flower website is a special category designed to help customers celebrate the academic achievements of their loved ones. Here, customers can find a variety of beautiful and creative floral arrangements, bouquets, and gifts that are perfect for congratulating graduates on their big day. Whether they're looking for traditional bouquets of colorful flowers or unique and personalized designs that incorporate school colors and emblems, your graduation section offers something for everyone. Additionally, you may also offer other graduation-related products such as balloons, gift baskets, and greeting cards to help make your customer's celebration even more special.</h1>
+        </div>
+        <section class="main2">
+
+        
+            <div class="item mag" >
+                
+                <a class="box res" ng-repeat="item in graduation" href ="{{item.goto}}" >
+                    <img ng-src="images/{{item.img}}" class="pc"/>
+                    <div>
+                    <div class="name1">
+                        <h1>{{item.flwname}}</h1> 
+                    </div>
+                    <div id="itmprc">
+                        <h1>{{item.price}}</h1>
+                    </div>
+                   </div>
+                    
+                </a>
+                
+            </div>
+           
+        </section>
+        
+        <section class="main6">
+            <div class="footer1">
+                <div class="logo2"><img src="images/logo.png" alt=""></div>
+                <div class="footerlink">
+                    <a class="b">Shop by occasion</a>
+                    <a href="birthday.html">Birthday</a>
+                    <a href ="Gradution.html">Gradution</a>
+                    <a href ="Anniversary.html">Anniversary</a>
+                    <a href ="Marraige.html">Marraige</a>
+                    <a href ="Thankyou.html">Thank you</a>
+                
+                </div>
+                
+
+            </div>
+            <div class="footer2">
+                <div class="footerlink">
+                    <a class="b">Shop by Flowers</a>
+                    <a href="Daisies.html">Daisies</a>
+                    <a href="Lilies.html">Lilies</a>
+                    <a href="Sunflowers.html">Sunflowers</a>
+                    <a href="roses.html">Roses</a>
+                    <a href="Irisis.html">Irisis</a>
+                </div>
+            </div>
+            <div class="footer3">
+                <div class="footerlink">
+                    <a class="b">Contacts</a>
+                    <a>Feel free to email us</a>
+                    <a href="mailto:blossompetals@gmail.com?subject=Hello%20there&body=I%20hope%20you%20are%20doing%20well">blossompetals@example.com</a>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/"><img src="images/instagram-removebg-preview.png"></a>
+                        <a href="https://www.facebook.com/"><img src="images/facebook-removebg-preview.png"></a>
+                        <a href="https://www.pinterest.com/"><img src="images/pinterest-removebg-preview.png"></a>
+                        <a href="https://www.youtube.com/"><img src="images/youtube-removebg-preview.png"></a>
+                    </div>
+                </div>
+                
+            </div>
+        
+        </section>
+
+
+</section>
+    
+    
+</body>
+</html>

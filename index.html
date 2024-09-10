@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Petals</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/angular.js"></script>
+    <script src="js/script.js"></script>
+    <link  rel="icon" href="images/favicon.ico">
+
+</head>
+<body ng-controller="cop">
+    <nav class="navbar">
+        <a href ="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+        <div class="nav1">
+            <div class="nav1a">
+                <img src="images/home_icon.png"/><a href="index.html">Home</a>
+            </div>
+            <div class="occ">
+                <a class="men">Occasions</a>
+                <div class="dropdown">
+                    <button onclick="goToThankYou()" class="drop">
+                        <a>Thank You</a>
+                        <hr>
+                    </button>
+                    <button onclick="goToAnniversary()" class="drop">
+                        <a>Anniversary</a>
+                        <hr>
+                    </button>
+                    <button onclick="goToMarraige()" class="drop">
+                        <a>Marraige</a>
+                        <hr>
+                    </button>
+                    <button  onclick="goToBirthday()" class="drop">
+                        <a>Birthday</a>
+                        <hr>
+                    </button>
+                    <button  onclick="goToGradution()" class="drop">
+                        <a>Gradution</a>
+                        <hr>
+                    </button>
+                    
+            </div>
+        </div>
+            
+            <div class="flw">
+                <a>flowers</a>
+                <div class="dropdown2">
+                    <button  onclick="Daisies()" class="drop">
+                        <a>Daisies</a>
+                        <hr>
+                    </button>
+                    <button onclick="roses()" class="drop">
+                        <a>Roses</a>
+                        <hr>
+                    </button>
+                    <button  onclick="Sunflowers()" class="drop">
+                        <a>Sunflowers</a>
+                        <hr>
+                    </button>
+                    <button  onclick="Lilies()" class="drop">
+                        <a>Lilies</a>
+                        <hr>
+                    </button>
+                    <button  onclick="Irisis()" class="drop">
+                        <a>Irisis</a>
+                        <hr>
+                    </button>
+                    
+            </div>
+            </div>
+            <a href="contact.html" class="cont">Contact us</a>
+            
+            <div class="nav1b">
+                <img src="images/menu.png" id="menu" alt="">
+                <div class="dropdown3">
+                    <button  onclick="goToPage()" class="drop">
+                        <a>Home</a>
+                        <hr>
+                    </button>
+                    <div class="pop drop">
+                        <a>Occasions</a>
+
+                        <div class="dropdown4">
+                            <button onclick="goToThankYou()" class="drop">
+                                <a>Thank You</a>
+                                <hr>
+                            </button>
+                            <button onclick="goToAnniversary()" class="drop">
+                                <a>Anniversary</a>
+                                <hr>
+                            </button>
+                            <button onclick="goToMarraige()" class="drop">
+                                <a>Marraige</a>
+                                <hr>
+                            </button>
+                            <button  onclick="goToBirthday()" class="drop">
+                                <a>Birthday</a>
+                                <hr>
+                            </button>
+                            <button  onclick="goToGradution()" class="drop">
+                                <a>Gradution</a>
+                                <hr>
+                            </button>
+                    </div>
+                            
+                        <hr>
+                    </div>
+                    <div class="pop2 drop">
+                        <a>Flowers</a>
+                        
+                        <div class="dropdown5">
+                            <button  onclick="Daisies()" class="drop">
+                                <a>Daisies</a>
+                                <hr>
+                            </button>
+                            <button onclick="roses()" class="drop">
+                                <a>Roses</a>
+                                <hr>
+                            </button>
+                            <button  onclick="Sunflowers()" class="drop">
+                                <a>Sunflowers</a>
+                                <hr>
+                            </button>
+                            <button  onclick="Lilies()" class="drop">
+                                <a>Lilies</a>
+                                <hr>
+                            </button>
+                            <button  onclick="Irisis()" class="drop">
+                                <a>Irisis</a>
+                                <hr>
+                            </button>
+                            
+                    </div>
+                    <hr>
+                    </div>
+                    <button  onclick="goTocontact()" class="drop">
+                        <a>Contact us</a>
+                        <hr>
+                    </button>
+            </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <section class="main">
+            <section class="main1">
+                <div class="box1">
+                    <img src="images/XOXO_Rosalea.png" alt="Your Image">
+                  </div>
+                  <article class="flwdesc">
+                    <h1 id="prdname">Beauty of Blue Hydrangeas<br>₦50,000</h1>
+                    <h1><br>
+                        Indulge in the beauty of Blue Hydrangeas with this gorgeous plant that any gardener would love. With its full, vibrant blooms and long-lasting beauty, it is the perfect addition to any indoor space, adding a burst of color and life to your home.
+        
+        Standing at approximately 16" tall, this plant comes in a lovely woven basket, making it a perfect gift for yourself or a loved one. The Blue Hydrangea is a treat for the senses, with its stunning shades of blue and green, and delicate petals that form a stunning ball-shaped bloom.
+        
+        To keep your Blue Hydrangea thriving, it is important to place it in full sun and bright light. You should keep the soil evenly moist, being careful not to let it dry out completely between watering, but also taking care to avoid overwatering. With proper care, this plant will continue to bloom for a long time, bringing joy and beauty to any room.
+        
+                    </h1>
+                    <button onclick="roses()">
+                        SHOP NOW
+                    </button>
+                </article>
+                </section>
+
+                <section class="main1">
+                    
+                      <article class="flwdesc mag">
+                        <h1 id="prdname">The Light of My Life Bouquet<br>₦100,000</h1>
+                        <h1><br>
+                            The Light of My Life Bouquet & Happy Birthday Topper is a gift that will make any recipient's day special. This dazzling arrangement boasts a mix of stunning roses, lilies, vibrant poms and more to create a truly unique and memorable gift. The "Happy Birthday" topper adds an extra touch of love and joy to the already-gorgeous bouquet, making it perfect for any birthday celebration.
+                            This Deluxe Bouquet measures approximately 18"H x 16"W and is designed by our experienced florists who have a keen eye for detail and creativity. They put all their efforts into curating this stunning floral masterpiece, which is sure to leave a lasting impression on your loved one.
+                            To ensure long-lasting blooms, we recommend replacing the water daily and trimming the stems every couple of days. However, rest assured that you don't need to fuss over it too much as our bouquets are ready-to-display, so all you need to do is find the perfect spot in your home or office where it can be admired and enjoyed.
+                             </h1>
+                        <button onclick="roses()">
+                            SHOP NOW
+                        </button>
+                    </article>
+                    <div class="box1">
+                        <img src="images/Light_of_My_Life_Bouquet_Happy_Birthday_Topper-removebg-preview.png" alt="Your Image">
+                      </div>
+                    </section>
+                
+                    <section class="gp main1 ">
+                        
+                        <div class="st">
+                        <div class="box1">
+                            <img src="images/iris-removebg-preview.png" alt="Your Image">
+                          </div>
+
+                          <div class="box1">
+                            <img src="images/Tango_In_Paris_Bouquet___Bear_Set-removebg-preview.png" alt="Your Image">
+                          </div>
+
+                          <div class="box1">
+                            <img src="images/Beyond_Blue_Hydrangea-removebg-preview.png" alt="Your Image">
+                          </div>
+                        </div>
+                        </section>
+                    
+                      
+                 
+                        
+                        
+
+                <section class="main2">
+                    <div class="title">
+                        &nbsp;
+                        <h1>Our Top Seller</h1>
+                    </div>
+                    
+                    <div class="item mag" >
+                        
+                        <a class="box res" ng-repeat="item in items" href ="{{item.goto}}" >
+                            <img ng-src="images/{{item.img}}" class="pc"/>
+                            <div>
+                            <div class="name1">
+                                <h1>{{item.flwname}}</h1> 
+                            </div>
+                            <div id="itmprc">
+                                <h1>{{item.price}}</h1>
+                            </div>
+                           </div>
+                            
+                        </a>
+                        
+                    </div>
+                   
+                </section>
+                <section class="main3">
+                    <div class="title2">
+                        &nbsp;
+                        <h1>Shop By Occasion</h1>
+                    </div>
+                    <div class="item2 mag" >
+                        
+                        <a class="box" ng-repeat="item in occasion" href ="{{item.goto}}" >
+                            <img ng-src="images/{{item.img}}" class="pc"/>
+                            <div>
+                            <div class="name2">
+                                <h1>{{item.flwname}}</h1> 
+                            </div>
+                           </div>
+                            
+                        </a>
+                        
+                    </div>
+                    &nbsp;
+                </section>
+                <section class="main4">
+                    <div class="title2">
+                        &nbsp;
+                        <h1>Shop By Flowers</h1>
+                    </div>
+                    <div class="item2 mag" >
+                        
+                        <a class="box" ng-repeat="item in flower" href ="{{item.goto}}" >
+                            <img ng-src="images/{{item.img}}" class="pc"/>
+                            <div>
+                            <div class="name2">
+                                <h1>{{item.flwname}}</h1> 
+                            </div>
+                           </div>
+                            
+                        </a>
+                        
+                    </div>
+                    &nbsp;
+                </section>
+                <section class="main5">
+                    <div class="title">
+                        &nbsp;
+                        <h1>Birthdays</h1>
+                    </div>
+                    
+                    <div class="item mag" >
+                        
+                        <a class="box res" ng-repeat="item in birthdays" href ="{{item.goto}}" >
+                            <img ng-src="images/{{item.img}}" class="pc"/>
+                            <div>
+                            <div class="name1">
+                                <h1>{{item.flwname}}</h1> 
+                            </div>
+                            <div id="itmprc">
+                                <h1>{{item.price}}</h1>
+                            </div>
+                           </div>
+                            
+                        </a>
+                        
+                    </div>
+                    <div class="shopcontainer">
+                        <button  onclick="goToBirthday()" class="shop">Shop birthday</button>
+                    </div>
+                    
+                   
+                </section>
+
+                <section class="main5">
+                    <div class="title">
+                        &nbsp;
+                        <h1>Roses</h1>
+                    </div>
+                    
+                    <div class="item mag" >
+                        
+                        <a class="box res" ng-repeat="item in roses1" href ="{{item.goto}}" >
+                            <img ng-src="images/{{item.img}}" class="pc"/>
+                            <div>
+                            <div class="name1">
+                                <h1>{{item.flwname}}</h1> 
+                            </div>
+                            <div id="itmprc">
+                                <h1>{{item.price}}</h1>
+                            </div>
+                           </div>
+                            
+                        </a>
+                        
+                    </div>
+                    <div class="shopcontainer">
+                        <button onclick="roses()" class="shop">Shop roses</button>
+
+                    </div>
+                    
+
+                   
+                </section>
+                <section class="main6">
+                    <div class="footer1">
+                        <div class="logo2"><img src="images/logo.png" alt=""></div>
+                        <div class="footerlink">
+                            <a class="b">Shop by occasion</a>
+                            <a href="birthday.html">Birthday</a>
+                            <a href ="Gradution.html">Gradution</a>
+                            <a href ="Anniversary.html">Anniversary</a>
+                            <a href ="Marraige.html">Marraige</a>
+                            <a href ="Thankyou.html">Thank you</a>
+                        
+                        </div>
+                        
+
+                    </div>
+                    <div class="footer2">
+                        <div class="footerlink">
+                            <a class="b">Shop by Flowers</a>
+                            <a class="b">Shop by Flowers</a>
+                            <a href="Daisies.html">Daisies</a>
+                            <a href="Lilies.html">Lilies</a>
+                            <a href="Sunflowers.html">Sunflowers</a>
+                            <a href="roses.html">Roses</a>
+                            <a href="Irisis.html">Irisis</a>
+                        </div>
+                    </div>
+                    <div class="footer3">
+                        <div class="footerlink">
+                            <a class="b">Contacts</a>
+                            <a>Feel free to email us</a>
+                            <a href="mailto:blossompetals@gmail.com?subject=Hello%20there&body=I%20hope%20you%20are%20doing%20well">blossompetals@example.com</a>
+                            <div class="socials">
+                                <a href="https://www.instagram.com/"><img src="images/instagram-removebg-preview.png"></a>
+                                <a href="https://www.facebook.com/"><img src="images/facebook-removebg-preview.png"></a>
+                                <a href="https://www.pinterest.com/"><img src="images/pinterest-removebg-preview.png"></a>
+                                <a href="https://www.youtube.com/"><img src="images/youtube-removebg-preview.png"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                </section>
+    
+    
+</section>
+    
+    
+</body>
+</html>
